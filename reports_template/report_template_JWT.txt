@@ -1,0 +1,25 @@
+Title: <SVULNTYPE> <VULNERABILITY> vulnerability on "<DOMAIN>"
+
+Summary:
+
+A <SVULNTYPE> <VULNERABILITY> vulnerability has been discovered on the website "<DOMAIN>". This vulnerability allows an attacker to manipulate the JWT and gain unauthorized access to sensitive information or perform other malicious actions.
+
+Details:
+
+The vulnerability exists in the page "<URL>", where the application uses JWT for authentication and authorization. The application is not properly validating the JWT, which allows an attacker to manipulate the token and gain unauthorized access to sensitive information or perform other malicious actions.
+
+Proof of Concept:
+
+An attacker can use a tool such as JWT Debugger to manipulate the JWT and gain unauthorized access to the application's sensitive information or perform other malicious actions.
+<PAYLOAD>
+
+Impact:
+
+An attacker can use this vulnerability to manipulate the JWT and gain unauthorized access to sensitive information or perform other malicious actions. This can lead to unauthorized access to sensitive information, account takeover, and other security breaches.
+
+Recommendations:
+
+Properly validate the JWT on the server-side
+Use a JWT library that has been properly tested and reviewed
+Use a JWT with a sufficiently long and secure signing key
+Use JWT best practices such as signing and encrypting the JWT

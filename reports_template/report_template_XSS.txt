@@ -1,0 +1,27 @@
+Title: <SVULNTYPE> <VULNERABILITY> vulnerability on "<DOMAIN>"
+
+Summary:
+
+A <SVULNTYPE> <VULNERABILITY> vulnerability has been discovered on the website "<DOMAIN>". The vulnerability allows an attacker to inject malicious code into the website, which is then executed by the victim's browser. This can be used to steal user's data, session cookies, and perform other malicious actions.
+
+Details:
+
+The vulnerability exists in one of the parameter in the URL "<URL>". This parameter is not properly sanitized before being reflected back to the user. An attacker can craft a URL with a payload that will be executed by the victim's browser when they visit the URL. The payload can be hidden in a link, an image, or any other element on the page.
+
+Proof of Concept:
+
+The following URL demonstrates the vulnerability:
+<URL><PAYLOAD>
+
+When a user visits this URL, the browser will execute the script and display a popup alert box.
+
+Impact:
+
+An attacker can use this vulnerability to steal user's data, session cookies, and perform other malicious actions. This can lead to unauthorized access to sensitive information, account takeover, and other security breaches.
+
+Recommendations:
+
+Properly sanitize user input before reflecting it back to the user.
+Use a Content Security Policy (CSP) to prevent the execution of malicious scripts.
+Use a HTTP-only and secure flag for cookies
+Use a security framework such as OWASP for input validation

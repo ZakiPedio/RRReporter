@@ -1,0 +1,24 @@
+Title: <SVULNTYPE> <VULNERABILITY> vulnerability on "<DOMAIN>"
+
+Summary:
+A <SVULNTYPE> <VULNERABILITY> vulnerability has been discovered on the website "<DOMAIN>". This vulnerability allows an attacker to include arbitrary files from a remote server, potentially leading to the execution of arbitrary code or other malicious actions.
+
+Details:
+
+The vulnerability exists in the page "<URL>". The page is using user input to include files from a remote server without proper validation and sanitization, which allows an attacker to include arbitrary files. The attacker can use this vulnerability to include malicious files from a remote server, which can be used to execute arbitrary code or gain unauthorized access to the server.
+
+Proof of Concept:
+
+An attacker can include a malicious file from a remote server, such as a web shell, by sending the following request:
+
+Copy code
+<URL><PAYLOAD>
+
+Impact:
+An attacker can use this vulnerability to include malicious files from a remote server, which can be used to execute arbitrary code or gain unauthorized access to the server. This can lead to unauthorized access to sensitive information, account takeover, and other security breaches.
+
+Recommendations:
+
+Properly validate and sanitize the input used to include files
+Use a whitelist of allowed remote domains
+Use a security framework such as OWASP for input validation

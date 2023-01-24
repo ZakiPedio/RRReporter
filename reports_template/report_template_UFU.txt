@@ -1,0 +1,30 @@
+Title: <SVULNTYPE> <VULNERABILITY> vulnerability on "<DOMAIN>"
+
+Summary:
+
+An <SVULNTYPE> <VULNERABILITY> vulnerability has been discovered on the website "<DOMAIN>". This vulnerability allows an attacker to upload arbitrary files to the server, potentially leading to remote code execution or other malicious actions.
+
+Details:
+
+The vulnerability exists in the file upload feature on the "<URL>. The upload feature does not properly validate the type and content of the files being uploaded, which allows an attacker to upload arbitrary files to the server. The attacker can use this vulnerability to upload malicious files such as web shells, which can be used to execute arbitrary code or gain unauthorized access to the server.
+
+Proof of Concept:
+
+An attacker can upload a malicious file, such as a web shell, using the following steps:
+
+Create a web shell file with arbitrary code
+Use a tool such as Burp Suite to intercept the file upload request
+Modify the request to include the malicious file like <PAYLOAD>
+Forward the request to the server
+Access the uploaded file on the server to execute arbitrary code
+
+Impact:
+
+An attacker can use this vulnerability to upload malicious files, such as web shells, which can be used to execute arbitrary code or gain unauthorized access to the server. This can lead to unauthorized access to sensitive information, account takeover, and other security breaches.
+
+Recommendations:
+
+Properly validate and sanitize the type and content of files being uploaded
+Limit the types of files that can be uploaded
+Use a security framework such as OWASP for input validation
+Use a Content-Security-Policy (CSP) to prevent the execution of malicious scripts

@@ -1,0 +1,24 @@
+Title: <SVULNTYPE> <VULNERABILITY> vulnerability on "<DOMAIN>"
+
+Summary:
+
+A <SVULNTYPE> <VULNERABILITY> vulnerability has been discovered on the website "<DOMAIN>". This vulnerability allows an attacker to inject malicious SQL code into the website's database, which can be used to extract sensitive information.
+
+Details:
+
+The vulnerability exists in the page "<URL>". The page is accepting user input that is used to construct SQL queries without proper validation and sanitization, which allows an attacker to inject malicious SQL code into the website's database. The attacker can use this vulnerability to extract sensitive information, such as user's login credentials, email addresses, and other personal information.
+
+Proof of Concept:
+
+The following payload can be used to extract data from the database:
+<PAYLOAD>
+
+Impact:
+
+An attacker can use this vulnerability to extract sensitive information from the website's database, such as user's login credentials, email addresses, and other personal information. This can lead to unauthorized access to sensitive information, account takeover, and other security breaches.
+
+Recommendations:
+
+Properly sanitize user input before using it in a SQL query.
+Use prepared statements, parameterized queries or ORM
+Use a security framework such as OWASP for input validation

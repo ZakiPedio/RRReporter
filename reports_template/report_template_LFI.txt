@@ -1,0 +1,26 @@
+Title: <SVULNTYPE> <VULNERABILITY> vulnerability on "<DOMAIN>"
+
+Summary:
+
+A <SVULNTYPE> <VULNERABILITY> vulnerability has been discovered on the website "<DOMAIN>". This vulnerability allows an attacker to include arbitrary files from the local file system, potentially leading to the disclosure of sensitive information or other malicious actions.
+
+Details:
+
+The vulnerability exists in the page "<URL>". The page is using user input to include files from the local file system without proper validation and sanitization, which allows an attacker to include arbitrary files. The attacker can use this vulnerability to include sensitive files such as configuration files, log files, and other files that may contain sensitive information.
+
+Proof of Concept:
+
+An attacker can include a sensitive file by sending the following request:
+
+Copy code
+<URL><PAYLOAD>
+
+Impact:
+
+An attacker can use this vulnerability to include sensitive files such as configuration files, log files, and other files that may contain sensitive information. This can lead to the disclosure of sensitive information, unauthorized access, and other security breaches.
+
+Recommendations:
+
+Properly validate and sanitize the input used to include files
+Use a whitelist of allowed files
+Use a security framework such as OWASP for input validation

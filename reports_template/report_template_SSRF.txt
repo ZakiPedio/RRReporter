@@ -1,0 +1,24 @@
+Title: <SVULNTYPE> <VULNERABILITY> vulnerability on "<DOMAIN>"
+
+Summary:
+
+A <SVULNTYPE> <VULNERABILITY> vulnerability has been discovered on the website "<DOMAIN>". This vulnerability allows an attacker to send malicious requests from the server to internal or external systems, potentially exposing sensitive information or allowing unauthorized access.
+
+Details:
+
+The vulnerability exists in the page "<URL>". The page is accepting user input that is used to make HTTP requests on the server side. An attacker can manipulate the input to make requests to internal or external systems that are not intended to be accessed by the application. This can be used to extract sensitive information, perform port scanning and even reach internal systems that are not intended to be exposed to the internet.
+
+Proof of Concept:
+
+The following payload can be used to provoke SSRF:
+<PAYLOAD>
+
+Impact:
+
+An attacker can use this vulnerability to extract sensitive information from the internal systems, perform port scanning and even reach internal systems that are not intended to be exposed to the internet. This can lead to unauthorized access to sensitive information, account takeover, and other security breaches.
+
+Recommendations:
+
+Properly validate and sanitize user input before using it to make requests on the server side
+Use a security framework such as OWASP for input validation
+Use a whitelist of allowed external domains and IPs
